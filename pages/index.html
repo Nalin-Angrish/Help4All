@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<title>Help4All</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cursive">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+	body,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: "Cursive", sans-serif
+	}
+
+	body,
+	html {
+		height: 100%;
+		line-height: 1.8;
+	}
+
+	/* Full height image header */
+	.bgimg-1 {
+		background-position: center;
+		background-size: cover;
+        background-repeat:no-repeat;
+		background-image: url("https://images.unsplash.com/photo-1560252829-804f1aedf1be?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+        min-height: 100%;
+    }
+
+	.w3-bar .w3-button {
+		padding: 16px;
+	}
+</style>
+
+<body>
+
+	<!-- Navbar (sit on top) -->
+	<div class="w3-top" style="width:100%;">
+		<div class="w3-bar w3-white w3-card" id="myNavbar">
+			<a href="#home" class="w3-bar-item w3-button w3-wide"><b>Help4All</b></a>
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small">
+                <a href="#about" class="w3-bar-item w3-button">ABOUT US</a>
+                <a href="#team" class="w3-bar-item w3-button">DONATE</a>
+                <a href="#pricing" class="w3-bar-item w3-button">VOLUNTEER</a>
+                <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT US</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">DONATE</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">VOLUNTEER</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white bgimg-1" style="padding:48px;width:100%;">
+    <span class="w3-jumbo w3-hide-small">Start doing something that matters</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start doing something that matters</span><br>
+    <span class="w3-large">Stop wasting valuable time with ignorant people and come help.</span>
+    <p><a href="#team" class="w3-button w3-red w3-padding-large w3-large w3-margin-top">Donate</a></p>
+  </div> 
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">ABOUT US</h3>
+  <p class="w3-center w3-large">Key features of our company</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-third">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Responsive</p>
+      <p>Whenever you need help (wherever you are), we will do our best to get to you as quickly as possible.</p>
+    </div>
+    <div class="w3-third">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Passion</p>
+      <p>We created this company to help others, not to get popular. We will always try our best to help you.</p>
+    </div>
+    <div class="w3-third">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Support</p>
+      <p>Even if you need some motivation, we will always be there to cheer you up and feel motivated.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container w3-light-grey" style="padding-top:50px;padding-bottom:50px;">
+  <div class="w3-row-padding">
+    <div class="w3-col m6 s12 l4">
+      <h3>We love helping</h3>
+      <p>Come and volunteer to help others in need.</p>
+      <p><a href="#pricing" class="w3-button w3-black"></i>Volunteer</a></p>
+    </div>
+    <div class="w3-col m6 s12 l8">
+      <img class="w3-hide-large" src="https://images.unsplash.com/photo-1566938064504-a379175168b3?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTl8fHZvbHVudGVlcnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" style="width: 100%;">
+      <img class="w3-hide-small w3-hide-medium" src="https://images.unsplash.com/photo-1566938064504-a379175168b3?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTl8fHZvbHVudGVlcnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" style="width: 500px;float:right;height:300px">
+    </div>
+  </div>
+</div>
+
+
+
+<div id="team" class="w3-row w3-white w3-padding-64 w3-large">
+    <div class="w3-col s12 m6 l6 w3-padding">
+        <div class="w3-padding">
+            Are you an individual or a group who wants to help others by donating food/money/other items or want to report an issue to any NGO for help? If so, then you can utilise this extensive platform to find NGOs that can be useful in such cases and can approach you for help. Click the "Help" Button.<br>
+            <br><a href="{{url_for('donate')}}" class="w3-red w3-padding-large">Help</a>
+        </div>
+    </div>
+    <div class="w3-col s12 m6 l6 w3-padding">
+        <div class="w3-padding">
+            Are you an NGO and want to join our network and be ready to help the people who wish to do social good through this portal? If you are an Organisation that wishes to do so, then you can click on the "Sign Up" button to register yourself as an NGO.<br>
+            <br><a href="{{url_for('signup')}}" class="w3-blue w3-padding-large">Sign Up</a>
+        </div>
+    </div>
+</div>
+
+
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+  <div class="w3-third">
+    <span class="w3-xxlarge">140+</span>
+    <br>Volunteers
+  </div>
+  <div class="w3-third">
+    <span class="w3-xxlarge">215+</span>
+    <br>Happy People
+  </div>
+  <div class="w3-third">
+    <span class="w3-xxlarge">150+</span>
+    <br>Donations
+  </div>
+</div>
+
+<!-- Work Section -->
+<div class="w3-container" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">Pictures</h3>
+  <p class="w3-center w3-large">What we've done for people</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="https://images.unsplash.com/photo-1509239767605-0703ef611f08?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTJ8fGhlbHB8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="https://images.unsplash.com/photo-1508847154043-be5407fcaa5a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTV8fGhlbHB8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+    <div class="w3-col l3 m6">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="https://images.unsplash.com/photo-1541802645635-11f2286a7482?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTR8fGhlbHB8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTh8fGhlbHB8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="https://images.unsplash.com/photo-1510022079733-8b58aca7c4a9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjZ8fGhlbHB8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="https://images.unsplash.com/photo-1547082688-9077fe60b8f9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDV8fGhlbHB8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="https://images.unsplash.com/photo-1547496614-54ff387d650a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjh8fHBvb3IlMjBraWRzfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="https://images.unsplash.com/photo-1505155485412-30b3a45080ec?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTN8fHBvb3IlMjBraWRzfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Pricing Section -->
+<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
+  <h3>VOLUNTEER</h3>
+  <p class="w3-large">Choose a volunteering plan that fits your schedule and email us</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
+        <li class="w3-padding-16"><b>2</b> Days a Week</li>
+        <li class="w3-padding-16"><b>3</b> Locations</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+      </ul>
+    </div>
+    <div class="w3-third">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-red w3-xlarge w3-padding-48">Membership</li>
+        <li class="w3-padding-16"><b>6</b> Days a Week</li>
+        <li class="w3-padding-16"><b>9</b> Locations</li>
+        <li class="w3-padding-16"><b>Free</b> Merchandise</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
+        <li class="w3-padding-16"><b>4</b> Days a Week</li>
+        <li class="w3-padding-16"><b>12</b> Locations</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Let's get in touch. Send us a message:</p>
+  <div style="margin-top:48px" class="w3-row">
+    <form action="{{url_for('contact')}}" target="_blank" method="POST">
+       <div class="w3-col l4 m6 s12">
+        <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> New Delhi, India</p>
+        <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +91 9876543210</p>
+        <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: help4all@gmail.com</p>
+        <br>
+       </div>
+      <div class="w3-col l8 m6 s12">
+          <div class="w3-row">
+            <div class="w3-col l6 m6 s12"><p><input class="w3-input w3-border" type="text" placeholder="Name" required name="name"></p></div>
+            <div class="w3-col l6 m6 s12"><p><input class="w3-input w3-border" type="text" placeholder="Email" required name="email"></p></div>
+          </div>
+        <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="subject"></p>
+      </div>
+      <p><textarea class="w3-input w3-border" type="text" placeholder="Message" required name="message" style="resize:none;"></textarea></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+    <!-- Image of location/map 
+    <img src="https://images.unsplash.com/photo-1543609840-77bc74bd6d6b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTB8fG9mZmljZSUyMGJ1aWxkaW5nc3xlbnwwfDB8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60"" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
+    -->
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+  </div>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>

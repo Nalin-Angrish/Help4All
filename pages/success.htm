@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<title>Success | Help4All</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/fea1c84dce.js" crossorigin="anonymous"></script>
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.nav{
+  position: fixed;
+  top: 0%;
+}
+
+h1{
+    font-size: 36px;
+}
+</style>
+<body>
+
+
+
+<!-- Navbar (sit on top) -->
+	<div class="w3-top" style="width:100%;">
+		<div class="w3-bar w3-white w3-card" id="myNavbar">
+			<a href="{{url_for('home')}}" class="w3-bar-item w3-button w3-wide" id="homelink"><b>Help4All</b></a>
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small">
+                <a href="{{url_for('home')}}#about" class="w3-bar-item w3-button">ABOUT US</a>
+                <a href="{{url_for('home')}}#team" class="w3-bar-item w3-button">DONATE</a>
+                <a href="{{url_for('home')}}#pricing" class="w3-bar-item w3-button">VOLUNTEER</a>
+                <a href="{{url_for('home')}}#contact" class="w3-bar-item w3-button">CONTACT</a>
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="{{url_for('home')}}#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT US</a>
+  <a href="{{url_for('home')}}#team" onclick="w3_close()" class="w3-bar-item w3-button">DONATE</a>
+  <a href="{{url_for('home')}}#pricing" onclick="w3_close()" class="w3-bar-item w3-button">VOLUNTEER</a>
+  <a href="{{url_for('home')}}#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+  <div class="w3-display-middle">
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <h1>Your operation was successfully completed.</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p style="width:100%;text-align:center;">You will be soon redirected to the home page.</p>
+  </div>
+</div>
+
+
+
+
+  <script>
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function w3_open() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+    
+
+
+
+    setTimeout(function(){
+        document.getElementById("homelink").click();
+    }, 10000)
+    </script>
+</body>
+</html>
